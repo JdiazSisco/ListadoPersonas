@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.personas = this.personasService.personas;
   }
-
+//Holi
   personaAgregada(persona: Persona) {
     //  this.personas.push(persona);
     this.personasService.agregarPersona(persona);
