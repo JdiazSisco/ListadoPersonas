@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+  <button style="cursor: pointer" (click)="agregar()">+</button>
+</div>
+
+<div id="divListadoUsuarios" class="box">
+  <app-persona
+    *ngFor="let personaElement of personas; let i = index"
+    [persona]="personaElement"
+    [indice]="i"
+  >
+  </app-persona>
+</div>
+
+
+<div id="divRutasHijas" class="box">
+  <!--<app-formulario></app-formulario>-->
+  <router-outlet></router-outlet>
+</div>
+
